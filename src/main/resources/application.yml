@@ -2,5 +2,19 @@ spring:
   profiles:
     default: dev
 
+  jpa:
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+        format_sql: true
+        show_sql: true
+    open-in-view: false
+
 server:
   port: 8080
+
+logging:
+  level:
+    org.hibernate:
+      type.descriptor.sql: trace
+      org.hibernate.SQLQuery: debug
