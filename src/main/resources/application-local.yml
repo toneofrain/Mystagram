@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ${LOCAL_DB_URL}
+    username: mystagram
+    password: ${LOCAL_DB_PW}
