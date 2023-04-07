@@ -16,5 +16,5 @@ spring:
     driver-class-name: org.h2.Driver
     url: ${H2_URL}
     username: mystagram
-    password:
+    password: ${H2_PW}
 
